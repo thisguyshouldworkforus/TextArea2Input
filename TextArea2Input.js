@@ -1,18 +1,22 @@
 // ==UserScript==
 // @name         TextArea2Input
 // @namespace    http://tampermonkey.net/
-// @version      1.1
-// @description  -----------------------------------------------------------------------
-// @description  This script is intented only for QNAP NAS Storage Devices running
-// @description  firmware greater than 4.4.2.1270 where the login.html page was
-// @description  changed from an <input> field to a <textarea> page to prevent autologin
-// @description  services like LastPass or 1Password from filling the field.
-// @description  That's bullshit.
-// @description  So, a friend of mine wrote this script for me to help fix that. It worked so well, I wrapped it up into a TamperMonkey script for everyone to benefit from!
-// @description  This script will find the <username> attribute (GetElementById) and construct a new one.
-// @description  The old <textarea> element is replaced by an identical field, except now that new field is an <input> field
-// @description  which is now properly filled by LastPass (only one i've tested on).
-// @description  -----------------------------------------------------------------------
+// @version      1.2
+// @description  Please see below
+/*
+-----------------------------------------------------------------------------------
+This script is intented only for QNAP NAS Storage Devices running firmware
+greater than 4.4.2.1270 where the login.html page was changed from an
+<input> field to a <textarea> page to prevent autologin services like
+LastPass or 1Password from filling the field. That's bullshit. So, a friend
+of mine wrote this script for me to help fix that. It worked so well, I
+wrapped it up into a TamperMonkey script for everyone to benefit from! This
+script will find the <username> attribute (GetElementById) and construct a
+new one. The old <textarea> element is replaced by an identical field, except
+now that new field is an <input> field which is now properly filled by LastPass
+(only one i've tested on).
+-----------------------------------------------------------------------------------
+*/
 // @author       Ryan Meinzer, Alexander Snyder
 // @source       https://github.com/thisguyshouldworkforus/TextArea2Input
 // @downloadURL  https://github.com/thisguyshouldworkforus/TextArea2Input
