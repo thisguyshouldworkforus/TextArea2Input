@@ -8,7 +8,7 @@
 // @description  changed from an <input> field to a <textarea> page to prevent autologin
 // @description  services like LastPass or 1Password from filling the field.
 // @description  That's bullshit.
-// @description  So, I wrote this script to fix that.
+// @description  So, a friend of mine wrote this script for me to help fix that. It worked so well, I wrapped it up into a TamperMonkey script for everyone to benefit from!
 // @description  This script will find the <username> attribute (GetElementById) and construct a new one.
 // @description  The old <textarea> element is replaced by an identical field, except now that new field is an <input> field
 // @description  which is now properly filled by LastPass (only one i've tested on).
