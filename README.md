@@ -10,7 +10,7 @@ This script is intented only for **QNAP NAS Storage Devices** running firmware g
 
 That's bullshit.
 
-So, I wrote this script to fix that.
+So, a friend of mine wrote this script for me to help fix that. It worked so well, I wrapped it up into a TamperMonkey script for everyone to benefit from!
 
 This script will find the `<username>` attribute (`GetElementById`) and construct a new one.  The old `<textarea>` element is replaced by an identical field, except now that new field is an `<input>` field.
 
